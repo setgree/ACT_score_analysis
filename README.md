@@ -10,5 +10,5 @@ It's a strong relationship, to say the least:
 ![with mandatory states taken out](https://github.com/setgree/ACT_score_analysis/blob/master/ACT_use_rates.png)
 
 
-I created filepaths consistent with use for [[Code Ocean]]. where I will port this in time. 
+I created filepaths consistent with use for [Code Ocean](codeocean.com), where I will port this in time. 
 
