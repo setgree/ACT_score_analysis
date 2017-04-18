@@ -7,7 +7,7 @@ given that, it was not particularly surprising that WV would fall in the middle 
 The relationship holds when you look both at all states and also those with less than 100% ACT takeup -- those in which the test is optional, I'm presuming.
 
 It's a strong relationship, to say the least:
-![with mandatory states taken out](/ACT_use_rates.pg)
+![with mandatory states taken out](https://github.com/setgree/ACT_score_analysis/blob/master/ACT_use_rates.png)
 
 
 I created filepaths consistent with use for [[Code Ocean]]. where I will port this in time. 
