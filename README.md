@@ -9,6 +9,6 @@ The relationship holds when you look both at all states and also those with less
 It's a strong relationship, to say the least:
 ![with mandatory states taken out](https://github.com/setgree/ACT_score_analysis/blob/master/ACT_use_rates.png)
 
-
+That's an R^2 of 0.6038 for ACT optional states and 0.7119 for all states. I'm not sure which is more informative/theoretically interesting.
 I created filepaths consistent with use for [Code Ocean](codeocean.com), where I will port this in time. 
 
