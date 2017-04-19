@@ -3,7 +3,7 @@
 # pacman is a syntatically elegant way to upload packages that I like
 # uncomment next line if you haven't installed it already
 #install.packages("pacman")
-pacman::p_load(tidyverse, ggrepel)
+pacman::p_load(tidyverse, ggrepel, lmtest, car)
 
 # let's look at all data
 ACT <- read.table(file = "../input/ACT.tsv", sep =  '\t', header = FALSE)
@@ -23,9 +23,14 @@ ggplot(data = ACT, mapping = aes(x = percent_tested,
   theme(plot.title = element_text(hjust = 0.5))
  ggsave(filename = "../output/ACT_plot.pdf") 
 
-
-
+# Is heteroskedasticity a problem? Certainly looks like it
+pdf(file = "../output/PlotFits.pdf")
+par(mfrow=c(2,2)) # init 4 charts in 1 panel
+ plot(model)
 dev.off()
+
+lmtest::bptest(model) # eh
+car::ncvTest(model) # eh
 
 # What about states that don't have 100% testing? 
 
@@ -33,8 +38,8 @@ ACT_optional <- ACT %>%
   filter(percent_tested < 100)
 
 # Then do the same analysis
-model <- lm(formula = avg_score ~ percent_tested, data = ACT_optional)
-summary(model)
+model_optional <- lm(formula = avg_score ~ percent_tested, data = ACT_optional)
+summary(model_optional)
 
 ggplot(data = ACT_optional, mapping = aes(x = percent_tested, 
                                  y = avg_score)) +
@@ -45,4 +50,6 @@ ggplot(data = ACT_optional, mapping = aes(x = percent_tested,
        title = "Percent Tested vs. Average Score") + 
   theme(plot.title = element_text(hjust = 0.5))
 ggsave(filename = "../output/ACT_optional_plot.pdf") 
-dev.off()
+
+lmtest::bptest(model_optional) # worse but not crazy
+car::ncvTest(model_optional) # same
