@@ -9,5 +9,5 @@ It's a strong relationship, to say the least:
 
 The relationship holds when you look both at all states (R^2 = 0.7119) and also those with less than 100% ACT takeup (R^2 = 0.6083) -- those in which the test is optional, I'm presuming. I'm not sure which dataset is more informative/theoretically interesting. 
 
-I created filepaths consistent with use for [Code Ocean](codeocean.com), where I will port this in time. 
+I created filepaths consistent with use for [Code Ocean](https://www.codeocean.com), where I will port this in time. 
 
