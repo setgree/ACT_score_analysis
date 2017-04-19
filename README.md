@@ -5,7 +5,7 @@ Upon inspection, it looked like the percentage of people who took the test in a 
 given that, it was not particularly surprising that WV would fall in the middle of one category conidtional on falling in the middle of the other. I wrote a little bit of R code to demonstrate that. 
 
 It's a strong relationship, to say the least:
-![with mandatory states taken out](https://github.com/setgree/ACT_score_analysis/blob/master/ACT_use_rates.png)
+![All states](https://github.com/setgree/ACT_score_analysis/blob/master/ACT.png)
 
 The relationship holds when you look both at all states (R^2 = 0.7119) and also those with less than 100% ACT takeup (R^2 = 0.6083) -- those in which the test is optional, I'm presuming. I'm not sure which dataset is more informative/theoretically interesting. 
 
