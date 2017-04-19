@@ -25,7 +25,7 @@ ggplot(data = ACT, mapping = aes(x = percent_tested,
 
 # Is heteroskedasticity a problem? Certainly looks like it
 pdf(file = "../output/PlotFits.pdf")
-par(mfrow=c(2,2)) # init 4 charts in 1 panel
+par(mfrow=c(2,2))
  plot(model)
 dev.off()
 
