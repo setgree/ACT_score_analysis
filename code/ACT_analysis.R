@@ -1,4 +1,5 @@
 # data taken from https://magoosh.com/hs/act/2016/average-act-score-by-state/
+# column heads were hard to grab, I imputed them manually
 
 # pacman is a syntatically elegant way to upload packages that I like
 # uncomment next line if you haven't installed it already
