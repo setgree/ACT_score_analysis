@@ -38,7 +38,7 @@ car::ncvTest(model) # eh
 ACT_optional <- ACT %>%
   filter(percent_tested < 100)
 
-# Then do the same analysis
+# Repeat the analysis 
 model_optional <- lm(formula = avg_score ~ percent_tested, data = ACT_optional)
 summary(model_optional)
 
