@@ -3,7 +3,7 @@
 
 # pacman is a syntactically elegant way to upload packages that I like
 # uncomment next line if you haven't installed it already
-#install.packages("pacman")
+# install.packages("pacman")
 pacman::p_load(tidyverse, ggrepel, lmtest, car)
 
 # let's look at all data
